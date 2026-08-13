@@ -31,7 +31,6 @@ return (
     {/* Desktop actions */}
     <div className="hidden md:flex items-center gap-5">
       <a href="#" className="text-xl"><FaShoppingCart size={22} /></a>
-
       <a
         href="#"
         className="px-5 py-2 bg-blue-600 text-white rounded-lg"
@@ -39,7 +38,6 @@ return (
         Pre-Order
       </a>
     </div>
-
     {/* Mobile menu */}
     <button className="md:hidden text-2xl">
       <FaBars />
