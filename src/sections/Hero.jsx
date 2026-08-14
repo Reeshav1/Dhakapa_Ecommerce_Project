@@ -26,7 +26,7 @@ const Hero = () => {
             </a>
           </div>
         </div>
-        <div className="hero-image hidden md:flex items-end ">
+        <div className="hero-image hidden md:flex items-end  max-w-[30%]">
           <img src={heroImg} alt="Leather backpack"  className="object-contain h-60  "/>
         </div>
       </div>
