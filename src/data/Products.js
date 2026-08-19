@@ -21,7 +21,7 @@ const products = [
     name: " Tavel Dhakapa bag",
     category: "TravelBag",
     price: "Rs 2600",
-    image: "https://scontent.fktm8-1.fna.fbcdn.net/v/t51.82787-15/581793629_17871187032460913_5625697307418129168_n.jpg?stp=dst-jpg_tt6&cstp=mx1440x1920&ctp=s1440x1920&_nc_cat=108&ccb=1-7&_nc_sid=127cfc&_nc_ohc=uJ9KuG5SJnoQ7kNvwH_Wei5&_nc_oc=Adp6wEXxVqJUnAegWUbH5Yg3CKPF0otHhp4VaCgzaXXrmTKjear99vcN6t3fbVL3LGiWOhGLw5Nz2zBbDUpOJrFx&_nc_zt=23&_nc_ht=scontent.fktm8-1.fna&_nc_gid=PByeG6zJtEvydCdnKAL4uw&_nc_ss=7b2a8&oh=00_AQH9xFQrHPEMM--aTNqqAPMHLISEzK3GGReJKi4x7-g7gg&oe=6A84C1D2"
+    image: "https://i.ibb.co/nNrcPYtw/Travel-Bag.png"
   }
 ];
 

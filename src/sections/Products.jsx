@@ -7,7 +7,7 @@ const Products = () => {
   return (
     <>
     <section className="max-w-7xl mx-auto px-6 py-4 ">
-      <div className="flex justify-between">
+      <div className="flex justify-between mt-6">
         <h1 className="text-3xl font-bold">Featured Products</h1>
         <Button className="text-white">See All Products</Button>
       </div>

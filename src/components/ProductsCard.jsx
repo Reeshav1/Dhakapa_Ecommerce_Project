@@ -11,7 +11,7 @@ const ProductsCard = ({props}) => {
         <div className="relative bg-[#f3f4f6] p-3">
           <img
             src={props.image}
-            alt="Dhakapa Bag1"
+            alt={props.name}
             className="w-full h-[200px] object-contain rounded-xl group-hover:scale-[1.02] transition duration-300"
           />
         </div>
