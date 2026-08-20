@@ -1,6 +1,7 @@
 import React from 'react'
 import logo from "../assets/logo.png"
 import { FaShoppingCart ,FaBars} from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
 return (
@@ -21,10 +22,11 @@ return (
 
     {/* Desktop navigation */}
     <div className="hidden md:flex items-center gap-8 font-medium">
-      <a href="#">Home</a>
-      <a href="#">Products</a>
-      <a href="#">About</a>
-      <a href="#">Contact us</a>
+       <Link to="/">Home</Link>
+        <Link to="/products">Products</Link>
+        <Link to="/about">About</Link>
+        <Link to="/contact">Contact</Link>
+        <Link to="/login">Login</Link>
     </div>
 
     {/* Desktop actions */}

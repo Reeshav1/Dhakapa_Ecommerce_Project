@@ -40,4 +40,4 @@ const WhyDhakapa = () => {
   )
 }
 
-export default WhyDhakapa
+export default WhyDhakapa;

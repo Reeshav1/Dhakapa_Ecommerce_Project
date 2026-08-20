@@ -1,22 +1,26 @@
 import React from 'react'
-import Navbar from './components/Navbar'
-import Hero from './sections/Hero'
-import Products from './sections/Products'
-import ProductsCard from './sections/Products'
-import ShopByCategory from './sections/ShopByCategory'
-import WhyDhakapa from './sections/WhyDhakapa'
-import Footer from './sections/Footer'
+
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from './pages/Home'
+import ProductsPage from './pages/ProductsPage'
+import About from './pages/About';
+import Contact from './pages/Contact';
+import Navbar from './components/Navbar';
+import Footer from './sections/Footer';
 
 const App = () => {
   return (
     <>
+    <BrowserRouter>
     <Navbar/>
-    <Hero/>
-    <ShopByCategory/>
-    <Products/>
-    <WhyDhakapa/>
+    <Routes>
+    <Route path='/' element={<Home/>}/>
+    <Route path='products' element={<ProductsPage/>}/>
+    <Route path='/about' element={<About/>}/>
+    <Route path='/contact' element={<Contact/>}/>
+    </Routes>
     <Footer/>
-    
+    </BrowserRouter>
     </>
   )
 }
