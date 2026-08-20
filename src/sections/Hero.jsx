@@ -12,10 +12,7 @@ const Hero = () => {
             Where Tradition Meets Vogue
           </h1>
           <p className="mt-3 font-mono">
-            Experience Sound in Its Purest Formmed Justo Jam, Venentis Eii Amet
-            Tortor et, Cortier, Peritillle Metus. Ut aelellque klleuthenlina
-            Figita Elf eis Lucher, Ligula Polin, Intantum Vell, Geoie,
-            Oitexisier som Temper Pec. 
+            Inspired by heritage and modern fashion, our bags blend traditional craftsmanship with contemporary design. Each piece is made to offer timeless style, everyday functionality, and a distinctive sense of character..
           </p>
           <div className="hero-buttons flex flex-col  md:flex-row gap-4 mt-4 items-start text-center">
             <a href="#" className="btn primary border w-40 h-10 p-2 rounded hover:bg-[#263F79]/90">

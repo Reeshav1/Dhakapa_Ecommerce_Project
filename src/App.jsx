@@ -5,6 +5,7 @@ import Products from './sections/Products'
 import ProductsCard from './sections/Products'
 import ShopByCategory from './sections/ShopByCategory'
 import WhyDhakapa from './sections/WhyDhakapa'
+import Footer from './sections/Footer'
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
     <ShopByCategory/>
     <Products/>
     <WhyDhakapa/>
+    <Footer/>
     
     </>
   )

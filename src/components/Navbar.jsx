@@ -22,10 +22,9 @@ return (
     {/* Desktop navigation */}
     <div className="hidden md:flex items-center gap-8 font-medium">
       <a href="#">Home</a>
-      <a href="#">Collections</a>
+      <a href="#">Products</a>
       <a href="#">About</a>
-      <a href="#">Find us</a>
-      <a href="#">Pages</a>
+      <a href="#">Contact us</a>
     </div>
 
     {/* Desktop actions */}
