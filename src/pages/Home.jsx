@@ -9,12 +9,10 @@ import Footer from '../sections/Footer'
 const Home  = () => {
   return (
     <>
-    <Navbar/>
     <Hero/>
     <ShopByCategory/>
     <Products/>
     <WhyDhakapa/>
-    <Footer/>
      </>
   )
 }

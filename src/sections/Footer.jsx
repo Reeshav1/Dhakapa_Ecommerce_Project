@@ -4,7 +4,7 @@ import { FaFacebook, FaInstagram } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer class="bg-[#f5f3e9] text-black mt-10">
+    <footer class="bg-[#f5f3e9] text-black mt-0">
       <div class="max-w-7xl mx-auto px-6 py-10 grid grid-cols-1 md:grid-cols-3 gap-8">
         <div>
           <h2 class="text-2xl font-bold">Dhakapa</h2>

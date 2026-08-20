@@ -6,7 +6,7 @@ import products from "../data/Products";
 const ProductsCard = ({props}) => {
   return (
     <>
-      <div className="group w-[260px] bg-white rounded-2xl overflow-hidden border border-gray-200 shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1 mt-2">
+      <div className="group w-[300px] bg-white rounded-2xl overflow-hidden border border-gray-200 shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1 mt-2">
         {/* Image */}
         <div className="relative bg-[#f3f4f6] p-3">
           <img

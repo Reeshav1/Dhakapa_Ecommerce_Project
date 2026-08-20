@@ -1,28 +1,29 @@
-import React from 'react'
+import React from "react";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from './pages/Home'
-import ProductsPage from './pages/ProductsPage'
-import About from './pages/About';
-import Contact from './pages/Contact';
-import Navbar from './components/Navbar';
-import Footer from './sections/Footer';
+import Home from "./pages/Home";
+import ProductsPage from "./pages/ProductsPage";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+import Login from "./pages/Login";
+import Layout from "./components/Layout";
 
 const App = () => {
   return (
     <>
-    <BrowserRouter>
-    <Navbar/>
-    <Routes>
-    <Route path='/' element={<Home/>}/>
-    <Route path='products' element={<ProductsPage/>}/>
-    <Route path='/about' element={<About/>}/>
-    <Route path='/contact' element={<Contact/>}/>
-    </Routes>
-    <Footer/>
-    </BrowserRouter>
+      <BrowserRouter>
+        <Routes>
+          <Route element={<Layout />}>
+            <Route path="/" element={<Home />} />
+            <Route path="/products" element={<ProductsPage />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
+          </Route>
+        <Route path="/login" element={<Login/>}/>
+        </Routes>
+      </BrowserRouter>
     </>
-  )
-}
+  );
+};
 
-export default App
+export default App;
