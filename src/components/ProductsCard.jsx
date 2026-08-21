@@ -1,7 +1,4 @@
-import React from "react";
-import Button from "./Button";
-import { FaShoppingCart } from "react-icons/fa";
-import products from "../data/Products";
+
 
 const ProductsCard = ({props}) => {
   return (
@@ -15,6 +12,7 @@ const ProductsCard = ({props}) => {
             className="w-full h-[200px] object-contain rounded-xl group-hover:scale-[1.02] transition duration-300"
           />
         </div>
+    
         {/* Content */}
         <div className="p-4">
           <p className="text-gray-400 font-light text-sm">{props.category}</p>
