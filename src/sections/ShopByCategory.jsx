@@ -17,6 +17,9 @@ const ShopByCategory = () => {
       </div>
       <div className="category flex gap-4">
        {Category.map((elem)=>{
+        if(elem.category ==="All"){
+          return false;
+        }
         return <CategoryCard props={elem}/>
         console.log(elem)
        })}

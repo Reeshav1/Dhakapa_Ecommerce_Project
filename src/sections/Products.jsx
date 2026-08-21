@@ -13,9 +13,9 @@ const Products = () => {
       </div>
       <div className="products grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-4">
       {
-      products.map((product)=>{
-        return <ProductsCard props={product}/>
-      })
+      products.map((product)=>(
+        <ProductsCard props={product}/>
+      ))
       }
       </div>
     </section>

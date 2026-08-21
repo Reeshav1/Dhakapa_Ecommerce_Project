@@ -2,14 +2,26 @@ import React,{useState} from "react";
 import products from "../data/Products";
 import ProductsCard from "../components/ProductsCard";
 import { CiSearch } from "react-icons/ci";
+import ShopByCategory from "../data/ShopByCategory";
+
 
 
 const ProductsPage = () => {
    const [input,setInput] = useState('');
+   const [category,setCategory] = useState('All');
 
     const handleUserInput =(e)=>{
         setInput(e.target.value);  
+        conso
     }
+
+    const handInnerText =(e)=>{
+      const clickedCategory = e.target.innerText;
+      setCategory(clickedCategory);
+      console.log(clickedCategory)
+    }
+
+
   return (
     <>
       <div className="max-w-7xl m-auto px-6 py-4">
@@ -25,26 +37,13 @@ const ProductsPage = () => {
         </section>
 
         {/* Categories */}
-        <section>
+            <section>
           <div className="flex gap-4 mt-5 font-serif">
-            <button className="border px-4 py-2 rounded-3xl hover:bg-[#263F79] hover:text-white ">
-              All
+            {ShopByCategory.map((items)=>(
+              <button className="border px-4 py-2 rounded-3xl hover:bg-[#263F79] hover:text-white " onClick={handInnerText}>
+                {items.category}
             </button>
-            <button className="border px-4 py-2 rounded-3xl hover:bg-[#263F79] hover:text-white ">
-              Backpacks
-            </button>
-            <button className="border px-4 py-2 rounded-3xl hover:bg-[#263F79] hover:text-white ">
-              Handbags
-            </button>
-            <button className="border px-4 py-2 rounded-3xl hover:bg-[#263F79] hover:text-white ">
-              Tote Bags
-            </button>
-            <button className="border px-4 py-2 rounded-3xl hover:bg-[#263F79] hover:text-white ">
-              Travel Bags
-            </button>
-            <button className="border px-4 py-2 rounded-3xl hover:bg-[#263F79] hover:text-white ">
-              Briefcases
-            </button>
+            ))}
           </div>
         </section>
 
@@ -78,10 +77,17 @@ const ProductsPage = () => {
 
         <div className="flex gap-10 justify-center mt-10 ">
           {products.filter((item)=>{
+            if(category == "All"){
+              return true;
+            }
+            return category === item.category
+            })
+          .filter((item)=>{
             return input.toLowerCase() === ''? item : item.name.toLowerCase().includes(input.toLowerCase())
-          }).map((products) => {
-            return <ProductsCard props={products} />;
+          }).map((product) => {
+            return <ProductsCard props={product}/>;
           })}
+
         </div>
       </div>
     </>

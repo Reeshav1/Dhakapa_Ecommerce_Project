@@ -1,19 +1,19 @@
 const products = [
   {
     name: "Dhakapa BlueBag",
-    category: "BagPack",
+    category: "CasualBag",
     price: "Rs 2000",
     image: "https://i.ibb.co/q3jkS6G3/Blue-Bag.jpg"
   },
   {
     name: "Dhakapa BlackBag ",
-    category: "BagPack",
+    category: "CasualBag",
     price: "Rs 2000",
     image: "https://i.ibb.co/PswvygbC/Black-Bag.jpg"
   },
   {
     name: "Dhakap RedBag",
-    category: "BagPack",
+    category: "CasualBag",
     price: "Rs 2000",
     image: "https://i.ibb.co/JjR4749t/Red-Bag.jpg"
   },
